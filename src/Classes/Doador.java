@@ -2,14 +2,14 @@ package Classes;
 
 public class Doador {
 	private String nome;
-	private int idade;
-	private double peso;
-	private char sexo;
-	private boolean gravida;
-	private boolean amamentando;
-	private boolean parto;
-	private boolean doador;
-	private boolean febre;
+	private Integer idade;
+	private Double peso;
+	private Character sexo;
+	private Boolean gravida;
+	private Boolean amamentando;
+	private Boolean parto;
+	private Boolean doador;
+	private Boolean febre;
 	
 	
 	public Doador() {
