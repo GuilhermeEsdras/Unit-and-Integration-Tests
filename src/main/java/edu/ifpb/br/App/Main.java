@@ -12,11 +12,14 @@ public class Main
     {
         Scanner sc = new Scanner(System.in);
 
-//        Doador doador = new Doador("Esdras", , double peso, char sexo, boolean gravida, boolean amamentando, boolean parto,
-//        boolean doador, boolean febre);
-//
-//        ValidarDoador validarDoador = new ValidarDoador();
-//
-//        validarDoador.validarPrimeiraParte(doador);
+        Doador doador = new Doador("Gui Esdras", 61 , 50.00, 'F', false, true, true, false, false);
+
+        ValidarDoador validarDoador = new ValidarDoador();
+
+         if(validarDoador.validarPrimeiraParte(doador)){
+             validarDoador.validarSegundaParte(doador);
+         }
+
     }
 }
+
