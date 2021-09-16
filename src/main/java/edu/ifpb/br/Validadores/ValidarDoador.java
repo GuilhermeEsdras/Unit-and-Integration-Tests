@@ -5,12 +5,11 @@ import edu.ifpb.br.Classes.Doador;
 public class ValidarDoador {
 
     private Boolean validarIdade(int idade, Boolean doador){
-        return true;
+        return ((idade >= 16 && idade <= 69) || (idade > 60 && doador));
     }
 
     private Boolean validarPeso(double peso, char sexo){
-
-        return true;
+        return ((sexo == 'M' && peso > 60) || (sexo == 'F' && peso > 50));
     }
 
     public Boolean validarPrimeiraParte(Doador doador){
