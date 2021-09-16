@@ -132,17 +132,47 @@ public class TesteDoador {
 
     @Test
     public void testeParto() {
+        Doador d = new Doador();
 
+        d.setParto(false);
+
+        assertFalse(d.isParto());
+        assertTrue(!d.isParto());
+
+        d.setParto(true);
+
+        assertFalse(!d.isParto());
+        assertTrue(d.isParto());
     }
-//
-//	@Test
-//	public void testeDoador() {
-//
-//	}
-//
-//	@Test
-//	private void testeFebre() {
-//
-//	}
+
+	@Test
+	public void testeDoador() {
+        Doador d = new Doador();
+
+        d.setDoador(false);
+
+        assertFalse(d.isDoador());
+        assertTrue(!d.isDoador());
+
+        d.setDoador(true);
+
+        assertFalse(!d.isDoador());
+        assertTrue(d.isDoador());
+	}
+
+	@Test
+	public void testeFebre() {
+        Doador d = new Doador();
+
+        d.setFebre(false);
+
+        assertFalse(d.isFebre());
+        assertTrue(!d.isFebre());
+
+        d.setFebre(true);
+
+        assertFalse(!d.isFebre());
+        assertTrue(d.isFebre());
+	}
 
 }
