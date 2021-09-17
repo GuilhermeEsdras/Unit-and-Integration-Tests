@@ -9,7 +9,6 @@ public class ValidarDoador {
             return idade <= 60 || doador;
         }
         return false;
-
     }
 
     private Boolean validarPeso(double peso, char sexo){
@@ -28,12 +27,6 @@ public class ValidarDoador {
         return false;
     }
 
-
-//  Existem alguns requisitos de quem não pode doar sangue:
-//- Estiver com febre no dia da doação;
-//- Estiver grávida;
-//- Estiver amamentando, a menos que o parto tenha ocorrido há mais de 12 meses.
-
     public Boolean validarSegundaParte(Doador doador){
         if(!doador.isFebre()){
             if(!doador.isGravida()){
@@ -49,10 +42,5 @@ public class ValidarDoador {
 
         return false;
     }
-
-
-
-
-
 
 }
